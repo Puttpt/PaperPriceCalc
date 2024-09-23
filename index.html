@@ -39,6 +39,9 @@
             border: 1px solid #b2ebf2;
             border-radius: 5px;
         }
+        .result p {
+            font-weight: bold;
+        }
         .note {
             font-size: 12px;
             color: #888;
@@ -74,30 +77,30 @@
 <div class="container">
     <h1>Price Per Ream Calculation</h1>
     <div class="input-group">
-        <label for="gram">Gram</label>
-        <input type="number" id="gram" placeholder="Enter gram">
+        <label for="gram">แกรม (gsm)</label>
+        <input type="number" id="gram" placeholder="ระบุ แกรม">
     </div>
     <div class="input-group">
-        <label for="width">Width (inches)</label>
-        <input type="number" id="width" placeholder="Enter width in inches">
+        <label for="width">กว้าง (นิ้ว)</label>
+        <input type="number" id="width" placeholder="ระบุ ความกว้างกระดาษ (นิ้ว)">
     </div>
     <div class="input-group">
-        <label for="length">Length (inches)</label>
-        <input type="number" id="length" placeholder="Enter length in inches">
+        <label for="length">ยาว (นิ้ว)</label>
+        <input type="number" id="length" placeholder="ระบุ ความยาวกระดาษ (นิ้ว)">
     </div>
     <div class="input-group">
-        <label for="price">Price per KG (THB)</label>
-        <input type="number" id="price" placeholder="Enter price per kg in THB">
+        <label for="price">ราคา (บาท/กก.)</label>
+        <input type="number" id="price" placeholder="ระบุ ราคา (บาท/กก.)">
     </div>
     <div class="result" id="result">
-        <p>KG per Ream: <span id="kg-per-ream">-</span></p>
-        <p>Price per Ream (THB): <span id="price-per-ream">-</span></p>
+        <p>กก. ต่อรีม: <strong><span id="kg-per-ream">-</span></strong></p>
+        <p>ราคาบาท ต่อรีม: <strong><span id="price-per-ream">-</span></strong></p>
     </div>
     <div class="note">
-        *1 ream = 500 sheets
+        1 รีม = 500 แผ่น
     </div>
     <div class="info">
-        <p><strong>Contact Us:</strong></p>
+        <p><strong>ติดต่อเพิ่มเติมได้ที่</strong></p>
         <p>LINE OA: <a href="https://line.me/R/ti/p/@kvb-th">@kvb-th</a></p>
         <p>Facebook: <a href="https://www.facebook.com/kvb.th" target="_blank">Facebook.com/kvb.th</a></p>
         <p>Website: <a href="https://www.kvb-th.com" target="_blank">www.kvb-th.com</a></p>
